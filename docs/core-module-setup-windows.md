@@ -20,13 +20,12 @@ This tutorial was tested on Windows 7 Professional x64.
 Download BigClown IDE
 </a>
 
-** IMPORTANT: After installation and automatic start of Visual Studio Code you have to close it and start again. Otherwise the make utility would not work. We are working on fix.**
-
 This installer will take care of installing the following:
 
 * Visual Studio Code IDE
 * GIT command line utility to automatically get the latest SDK
 * ARM-GCC compiler for Windows
+* USB CDC and USB DFU device drivers
 * dfu-util for flashing firmware over USB
 
 
@@ -49,7 +48,7 @@ Congratulation for your first compiled firmware.
 ## How to upload firmware over USB
 
 
-After compiling the firmware. Press `Ctrl + Shift + P` in the Visual Studio code. The cursor will jump to the top command line. Press the backspace to delete the `>` symbol. Now write `task` and it will display you all the make targets the Makefile contains. We are interested in the `dfu` task. So execute command `task dfu`.
+After compiling the firmware. Press `Ctrl + P` in the Visual Studio code. The cursor will jump to the top command line. Now write `task` and it will display you all the make targets the Makefile contains. We are interested in the `dfu` task. So execute command `task dfu`.
 
 
 <img src="images/core-module-setup-windows/task-dfu.png" alt="Visual studio code" />
@@ -71,7 +70,7 @@ To debug the running code on Core Module you can use Ozone debugger with J-Link 
 Download the [Ozone debugger here](https://www.segger.com/downloads/jlink#Ozone).
 Ozone folder also needs to be set in PATH environment variable or you can simply edit Makefile and set absolute path to the Ozone.exe file.
 
-You start debugging by typing `make ozone` in the command line or `Ctrl+Shift+P` and typing `task ozone` in the Visual Studio Code.
+You start debugging by typing `make ozone` in the command line or `Ctrl+P` and typing `task ozone` in the Visual Studio Code.
 
 
 ## How to generate API documentation
@@ -79,7 +78,7 @@ You start debugging by typing `make ozone` in the command line or `Ctrl+Shift+P`
 
 Our SDK is using Doxygen to automaticaly generate API documentation from C header files.
 This tool is not necessary to install.
-The generated API documentation is also on http://api.bigclown.com.
+The generated API documentation is also on http://sdk.bigclown.com.
 Download the [latest Doxygen here](http://www.stack.nl/~dimitri/doxygen/download.html).
 
 You generate the docs by `make doc`.

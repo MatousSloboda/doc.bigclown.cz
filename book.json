@@ -11,7 +11,7 @@
     },
     "edit-link": {
       "base": "https://github.com/bigclownlabs/doc.bigclown.com/edit/master/docs",
-      "label": "Edit This Page"
+      "label": ""
     },
     "anchorjs": {
       "icon": "#",

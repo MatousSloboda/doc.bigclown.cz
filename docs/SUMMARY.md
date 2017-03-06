@@ -58,6 +58,7 @@
 
 * [Ping-pong](ping-pong.md)
 
+* [Bezdrátový LCD termostat](bcp-wireless-lcd-thermostat.md)
 
 ## Návody
 

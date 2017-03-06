@@ -1,6 +1,5 @@
 # BigClown Slovník Pojmů
 
-
 **Zde nalezeš vysvětlení používaných BigClowních pojmů a zkratek**
 
 ### BigClown Hub (Hub)

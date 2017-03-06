@@ -6,78 +6,18 @@
 {% block body %}
 
 <div id = "navigation">
-   <a class = "icon logo" href = "https://www.bigclown.cz"></a>
-   <ul class = "primaryNavigation">
-      <li><a href = "https://www.bigclown.cz/project">Inspirace</a></li>
-      <li><a href = "https://obchod.bigclown.cz/">Obchod</a></li>
-      <li class="selected"><a href = "/">Dokumentace</a></li>
-      <li><a href = "https://github.com/bigclownlabs" target="_blank">GitHub</a></li>
-      <li><a href = "https://www.bigclown.cz/contact">Kontakt</a></li>
-   </ul>
+	<a class = "icon logo" href = "https://www.bigclown.cz"></a>
+	<ul class = "primaryNavigation">
+		<li><a href = "https://www.bigclown.cz/project">Inspirace</a></li>
+		<li><a href = "https://obchod.bigclown.cz/">Obchod</a></li>
+		<li class = "selected"><a href = "/">Dokumentace</a></li>
+		<li><a href = "https://github.com/bigclownlabs" target="_blank">GitHub</a></li>
+		<li><a href = "https://www.bigclown.cz/contact">Kontakt</a></li>
+	</ul>
 </div>
 
-<div id="fix" style="height:calc(100% - 65px);">
+<div id = "documentation">
 {{ super() }}
 </div>
-
-<div id = "footer" class = "paddingTop-1 paddingBottom-1" style="display:none;">
-  <div class = "row">
-    <div class = "col-3 col-small-4 col-tablet-6 col-smart-12">
-      <h3>O nás</h3>
-      <ul>
-        <li>BigClown Labs s.r.o.</li>
-        <li>Masná 4477/5</li>
-        <li>46601 Jablonec nad Nisou</li>
-        <li>Česká republika</li>
-        <li><a href = "mailto:ask@bigclown.com">ask@bigclown.com</a></li>
-        <li><a href = "tel:+420725190630">+420 725 190 630</a></li>
-      </ul>
-      <p>Člen <a href = "http://www.jablotrongroup.com">JABLOTRON GROUP</a></p>
-    </div>
-    <div class = "col-3 col-small-4 col-tablet-6 col-smart-12">
-      <h3>Komunita</h3>
-      <ul>
-        <li><a href = "http://doc.bigclown.cz" target="_blank">Dokumentace</a></li>
-        <li><a href = "http://forum.bigclown.com" target="_blank">Fórum</a></li>
-        <li><a href = "https://github.com/bigclownlabs" target="_blank">GitHub</a></li>
-      </ul>
-      <h3 class = "partialMargin">Projekt</h3>
-      <ul>
-        <li><a href = "https://www.bigclown.cz/img/homepage/bigclown-concept.png" target="_blank">Koncept</a></li>
-        <li><a href = "https://www.bigclown.cz/img/homepage/bigclown-timeline.png" target="_blank">Časová osa</a></li>
-      </ul>
-    </div>
-    <div class = "col-2 col-small-4 clearLeft-small col-tablet-4 col-smart-12">
-      <h3>Odkazy</h3>
-      <p></p>
-      <ul>
-        <li><a href = "https://www.bigclown.com/contact">Kontakt</a></li>
-        <li><a href = "http://doc.bigclown.cz" target="_blank">Dokumentace</a></li>
-        <li><a href = "https://www.bigclown.com/project/">Inspirace</a></li>
-        <li><a href = "https://shop.bigclown.com">Obchod</a></li>
-        <li><a href = "https://www.bigclown.com/shopping-info/">Obchodní podmínky</a></li>
-        <li><a href = "https://www.bigclown.com/cookies/">Cookies</a></li>
-      </ul>
-    </div>
-    <div class = "col-2 col-small-4 col-tablet-4 col-smart-12">
-      <h3>Média</h3>
-      <ul>
-        <li><a href = "https://drive.google.com/drive/folders/0B7mImtQnvdScb0NMMjgwOXRyZDA?usp=sharing" target="_blank">Presskit</a></li>
-        <li><a href = "https://www.facebook.com/bigclownlabs/" target="_blank">Facebook</a></li>
-        <li><a href = "https://twitter.com/bigclownlabs" target="_blank">Twitter</a></li>
-        <li><a href = "https://www.youtube.com/bigclown" target="_blank">YouTube</a></li>
-        <li><a href = "https://www.linkedin.com/company/13187032?trk=tyah&trkInfo=clickedVertical%3Acompany%2CclickedEntityId%3A13187032%2Cidx%3A1-1-1%2CtarId%3A1475091311530%2Ctas%3Abigclown" target="_blank">LinkedIn</a></li>
-        <li><a href = "https://github.com/bigclownlabs" target="_blank">GitHub</a></li>
-      </ul>
-    </div>
-    <div class="col-2 col-small-4 col-tablet-4 col-smart-12">
-      <span class = "icon avatar"></span>
-    </div>
-  </div>
-</div>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script>
-$( "table" ).wrap( "<div class='table-container'></div>" );
-</script>
 
 {% endblock %}
